@@ -26,10 +26,10 @@ export default function Projects() {
         // Game Mods
         {
             name: "NeoBonerooms",
-            description: "Mod for The Bonerooms",
+            description: "Mod for The Bonerooms | Version 1.0.0",
             icon: <Gamepad size={24} />,
             repo: "https://github.com/NeoWayy/NeoBonerooms",
-            download: "",
+            download: "https://github.com/NeoWayy/NeoBonerooms/releases/download/v1.0.0/NeoBonerooms.dll",
             category: "games",
             tags: ["Mod", "Unity", "BepinEx"],
             featured: true
