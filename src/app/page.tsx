@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Globe } from "lucide-react";
+import { Globe, Gamepad } from "lucide-react";
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -79,6 +79,20 @@ export default function Home() {
                                 </CardDescription>
                             </CardContent>
                         </Card>
+
+                        <Card className="animate__animated animate__fadeInUp hover:shadow-lg transition-shadow duration-300 transition-all duration-300 transform hover:scale-105">
+                            <CardHeader>
+                                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                                    <Gamepad className="text-primary-foreground" />
+                                </div>
+                                <CardTitle>NeoBonerooms</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <CardDescription className="text-base">
+                                    Mod for The Bonerooms, comes with fixes and features
+                                </CardDescription>
+                            </CardContent>
+                        </Card>
                     </div>
                 </div>
             </section>
@@ -89,11 +103,17 @@ export default function Home() {
                         Our Team
                     </h2>
                     <div className="items-center justify-center flex mb-8">
-                        <div className="relative">
+                        <div className="relative px-4">
                             <Image src="/team/neoislost.jpg" width={160} height={160} alt="neoislost" className="transition-transform hover:scale-105 duration-300" />
                             <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl -z-10"></div>
                             <h1 className="text-2xl flex justify-center">NeoIsLost</h1>
                             <p className="flex justify-center">Founder & Owner</p>
+                        </div>
+                        <div className="relative px-4">
+                            <Image src="/team/ilik3trains.gif" width={160} height={160} alt="ilik3trains" className="transition-transform hover:scale-105 duration-300" />
+                            <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl -z-10"></div>
+                            <h1 className="text-2xl flex justify-center">ilik3trains</h1>
+                            <p className="flex justify-center">Developer & Tester</p>
                         </div>
                     </div>
                 </div>
